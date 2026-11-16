@@ -42,7 +42,7 @@ def pre_process_data(train_split, test_split, num_cols, cat_cols):
         ('encoder', OrdinalEncoder(
           handle_unknown='use_encoded_value', 
           unknown_value=-1,
-          encoded_dtype=np.int64))
+          dtype=np.int64))
     ])
 
     # Here we combine both piplines into a ColumnTransformer.
