@@ -36,8 +36,7 @@ class TabularDataset(Dataset):
         # as opposed to [-1, N-1].
         if X_cat.shape[1] > 0:
             X_cat_shifted = X_cat + 1
-            self.cat_features = torch.tensor((X_processed.shape[0], 0), 
-                                              dtype=torch.long)
+            self.cat_features = torch.tensor(X_cat_shifted, dtype=torch.long)
         else:
             self.cat_features = torch.empty((X_processed.shape[0], 0), 
                                               dtype=torch.long)
