@@ -1,0 +1,22 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+.venv/
+ENV/
+
+# Data and Models (Keep raw/processed data local)
+data/
+*.pt
+*.pth
+
+# IDE-specific settings
+.vscode/
+.idea/
+.DS_Store
